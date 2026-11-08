@@ -1,0 +1,39 @@
+2026-11-08 22:01:33.347 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype (no contact set)
+2026-11-08 22:01:41.244 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
+2026-11-08 22:01:41.244 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
+2026-11-08 22:01:41.244 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-08 22:04:13.286 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype cuteaisw@gmail.com
+2026-11-08 22:04:18.764 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
+2026-11-08 22:04:18.766 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
+2026-11-08 22:04:18.766 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-08 22:04:19.270 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 320193 for ticker AAPL
+2026-11-08 22:04:19.270 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AAPL (CIK 320193)
+2026-11-08 22:04:19.270 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000320193.json
+2026-11-08 22:04:19.809 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-08 22:04:19.809 | INFO     | __main__:run_ingestion:61 - Downloading Apple Inc. filed 2026-11-03 (accession 0000320193-26-000026)
+2026-11-08 22:04:19.809 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-08 22:04:19.809 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-08 22:06:41.900 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype cuteaisw@gmail.com
+2026-11-08 22:06:47.756 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
+2026-11-08 22:06:47.756 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
+2026-11-08 22:06:47.756 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-08 22:06:48.330 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 320193 for ticker AAPL
+2026-11-08 22:06:48.344 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AAPL (CIK 320193)
+2026-11-08 22:06:48.345 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000320193.json
+2026-11-08 22:06:48.905 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-08 22:06:48.905 | INFO     | __main__:run_ingestion:61 - Downloading Apple Inc. filed 2026-11-03 (accession 0000320193-26-000026)
+2026-11-08 22:06:48.905 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-08 22:06:48.905 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-08 22:09:46.269 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype cuteaisw@gmail.com
+2026-11-08 22:09:51.617 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
+2026-11-08 22:09:51.617 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
+2026-11-08 22:09:51.617 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-08 22:09:52.168 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 320193 for ticker AAPL
+2026-11-08 22:09:52.168 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AAPL (CIK 320193)
+2026-11-08 22:09:52.168 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000320193.json
+2026-11-08 22:09:53.028 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-08 22:09:53.028 | INFO     | __main__:run_ingestion:61 - Downloading Apple Inc. filed 2026-11-03 (accession 0000320193-26-000026)
+2026-11-08 22:09:53.028 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-08 22:09:53.028 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-08 22:09:53.491 | INFO     | __main__:run_ingestion:73 - Chunked AAPL into 36 chunks
+2026-11-08 22:09:55.460 | INFO     | __main__:run_ingestion:93 - Ingestion complete: 36 chunks indexed across 1 tickers
