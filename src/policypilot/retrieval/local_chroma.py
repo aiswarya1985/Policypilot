@@ -5,6 +5,7 @@ No API key or cloud dependency — this is what runs before a Databricks workspa
 from __future__ import annotations
 
 import chromadb
+from loguru import logger
 from sentence_transformers import SentenceTransformer
 
 from policypilot.config import CHROMA_DIR, EMBEDDING_MODEL
@@ -29,6 +30,7 @@ class LocalChromaVectorStore:
         )
 
     def search(self, query: str, k: int = 5, ticker: str | None = None) -> list[SearchResult]:
+        logger.info("Searching for query in local_chroma: {!r} (ticker hint: {})", query, ticker)
         query_embedding = self._embedder.encode([query], show_progress_bar=False).tolist()
         query_kwargs = {"query_embeddings": query_embedding, "n_results": k}
         if ticker:
@@ -40,6 +42,8 @@ class LocalChromaVectorStore:
         dists = results.get("distances") or [[]]
         for text, meta, dist in zip(docs[0], metas[0], dists[0], strict=False):
             out.append(SearchResult(text=text, score=1 - dist, metadata=meta))
+
+        logger.info("Found {} results for query: {!r} (ticker hint: {})", out, query, ticker)
         return out
 
     def count(self) -> int:

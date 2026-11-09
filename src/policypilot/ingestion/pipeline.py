@@ -8,9 +8,6 @@ import sys
 
 from loguru import logger
 
-from policypilot.utilities.logger import setup_logger
-
-
 from policypilot.config import (
     DATA_DIR,
     DEFAULT_TICKERS,
@@ -24,7 +21,7 @@ from policypilot.ingestion.edgar_client import EdgarClient
 from policypilot.ingestion.manifest import record_filing
 from policypilot.retrieval.base import VectorStore
 from policypilot.retrieval.local_chroma import LocalChromaVectorStore
-
+from policypilot.utilities.logger import setup_logger
 
 
 def get_vector_store() -> VectorStore:

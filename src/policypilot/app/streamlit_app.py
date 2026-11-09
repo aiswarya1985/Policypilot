@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 import streamlit as st
+from loguru import logger
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
@@ -16,6 +17,7 @@ from policypilot.agent.graph import ask
 from policypilot.agent.llm import get_llm_client
 from policypilot.config import DEFAULT_TICKERS, get_settings
 from policypilot.ingestion.pipeline import get_vector_store
+from policypilot.utilities.logger import setup_logger
 
 st.set_page_config(page_title="PolicyPilot", page_icon="📄")
 st.title("📄 PolicyPilot")
@@ -24,16 +26,25 @@ st.caption(
     "or refuses if it can't."
 )
 
+@st.cache_resource
+def _init_logging() -> bool:
+    setup_logger("DEBUG")
+    logger.info("PolicyPilot app starting")
+    return True
+
+
+_init_logging()
 
 @st.cache_resource
 def _load_backend():
     settings = get_settings()
-    # Only local mode needs a raw Groq key; deployed mode reaches Groq through the Unity
-    # Gateway model service using the App's own credentials, so no key exists there.
+    logger.info("Loading backend (PP_ENV={})", settings.env)
     if settings.is_local and not settings.groq_api_key:
+        logger.error("GROQ_API_KEY missing")
         return None, None, settings
-    return get_llm_client(), get_vector_store(), settings
-
+    llm, store = get_llm_client(), get_vector_store()
+    logger.info("Backend ready: {} + {}", type(llm).__name__, type(store).__name__)
+    return llm, store, settings
 
 llm, store, settings = _load_backend()
 
@@ -80,6 +91,7 @@ if question := st.chat_input("Ask a question about the ingested filings..."):
 
     with st.chat_message("assistant"):
         with st.spinner("Retrieving and answering..."):
+            logger.info("Question: {!r}", question)
             result = ask(llm, store, question)
         answer = result["final_answer"]
         grounded = result.get("grounded")

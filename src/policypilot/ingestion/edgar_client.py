@@ -8,15 +8,16 @@ import time
 
 import requests
 from bs4 import BeautifulSoup
+from loguru import logger
 
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik:010d}.json"
 ARCHIVES_URL = "https://www.sec.gov/Archives/edgar/data/{cik}/{accession_nodash}/{document}"
-from loguru import logger
 
-class EdgarClient:   
+
+class EdgarClient:
     def __init__(self, user_agent: str):
-        logger.debug("Initializing EdgarClient with User-Agent: {}", user_agent)    
+        logger.debug("Initializing EdgarClient with User-Agent: {}", user_agent)
         self._session = requests.Session()
         self._session.headers.update({"User-Agent": user_agent})
 
@@ -34,7 +35,7 @@ class EdgarClient:
         for entry in data.values():
             if entry["ticker"] == ticker:
                 logger.debug("Found CIK {} for ticker {}", entry["cik_str"], ticker)
-                return int(entry["cik_str"])            
+                return int(entry["cik_str"])
         raise ValueError(f"No CIK found for ticker {ticker!r}")
 
     def get_recent_10k(self, cik: int) -> dict:
@@ -43,7 +44,15 @@ class EdgarClient:
         recent = data["filings"]["recent"]
         for i, form in enumerate(recent["form"]):
             if form == "10-K":
-                logger.debug("found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}",)
+                logger.debug(
+                    "Found recent 10-K for CIK {} at index {}: accession {}, "
+                    "primary document {}, filing date {}",
+                    cik,
+                    i,
+                    recent["accessionNumber"][i],
+                    recent["primaryDocument"][i],
+                    recent["filingDate"][i],
+                )
                 return {
                     "cik": cik,
                     "accession_number": recent["accessionNumber"][i],
@@ -55,7 +64,6 @@ class EdgarClient:
 
     def download_filing_text(self, filing: dict) -> str:
         """Download a filing's primary document and return its extracted plain text."""
-       
         accession_nodash = filing["accession_number"].replace("-", "")
         url = ARCHIVES_URL.format(
             cik=filing["cik"],

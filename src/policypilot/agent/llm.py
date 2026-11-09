@@ -10,6 +10,8 @@ from __future__ import annotations
 
 from typing import Protocol
 
+from loguru import logger
+
 from policypilot.config import AI_GATEWAY_MODEL_SERVICE, GROQ_MODEL, get_settings
 
 
@@ -25,11 +27,13 @@ class GroqLLMClient:
         self._model = model
 
     def complete(self, system: str, messages: list[dict]) -> str:
+        logger.info("Calling Groq LLM with system prompt: {!r}", system)
         response = self._client.chat.completions.create(
             model=self._model,
             max_tokens=1024,
             messages=[{"role": "system", "content": system}, *messages],
         )
+        logger.info("Groq response: {}", response)
         return response.choices[0].message.content or ""
 
 
