@@ -1,39 +1,242 @@
-2026-11-08 22:01:33.347 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype (no contact set)
-2026-11-08 22:01:41.244 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
-2026-11-08 22:01:41.244 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
-2026-11-08 22:01:41.244 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
-2026-11-08 22:04:13.286 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype cuteaisw@gmail.com
-2026-11-08 22:04:18.764 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
-2026-11-08 22:04:18.766 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
-2026-11-08 22:04:18.766 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
-2026-11-08 22:04:19.270 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 320193 for ticker AAPL
-2026-11-08 22:04:19.270 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AAPL (CIK 320193)
-2026-11-08 22:04:19.270 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000320193.json
-2026-11-08 22:04:19.809 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
-2026-11-08 22:04:19.809 | INFO     | __main__:run_ingestion:61 - Downloading Apple Inc. filed 2026-11-03 (accession 0000320193-26-000026)
-2026-11-08 22:04:19.809 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
-2026-11-08 22:04:19.809 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
-2026-11-08 22:06:41.900 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype cuteaisw@gmail.com
-2026-11-08 22:06:47.756 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
-2026-11-08 22:06:47.756 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
-2026-11-08 22:06:47.756 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
-2026-11-08 22:06:48.330 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 320193 for ticker AAPL
-2026-11-08 22:06:48.344 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AAPL (CIK 320193)
-2026-11-08 22:06:48.345 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000320193.json
-2026-11-08 22:06:48.905 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
-2026-11-08 22:06:48.905 | INFO     | __main__:run_ingestion:61 - Downloading Apple Inc. filed 2026-11-03 (accession 0000320193-26-000026)
-2026-11-08 22:06:48.905 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
-2026-11-08 22:06:48.905 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
-2026-11-08 22:09:46.269 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype cuteaisw@gmail.com
-2026-11-08 22:09:51.617 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
-2026-11-08 22:09:51.617 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
-2026-11-08 22:09:51.617 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
-2026-11-08 22:09:52.168 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 320193 for ticker AAPL
-2026-11-08 22:09:52.168 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AAPL (CIK 320193)
-2026-11-08 22:09:52.168 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000320193.json
-2026-11-08 22:09:53.028 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
-2026-11-08 22:09:53.028 | INFO     | __main__:run_ingestion:61 - Downloading Apple Inc. filed 2026-11-03 (accession 0000320193-26-000026)
-2026-11-08 22:09:53.028 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
-2026-11-08 22:09:53.028 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
-2026-11-08 22:09:53.491 | INFO     | __main__:run_ingestion:73 - Chunked AAPL into 36 chunks
-2026-11-08 22:09:55.460 | INFO     | __main__:run_ingestion:93 - Ingestion complete: 36 chunks indexed across 1 tickers
+2026-11-09 13:09:05.542 | DEBUG    | policypilot.ingestion.edgar_client:__init__:19 - Initializing EdgarClient with User-Agent: PolicyPilot research prototype cuteaisw@gmail.com
+2026-11-09 13:09:12.222 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AAPL
+2026-11-09 13:09:12.222 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AAPL
+2026-11-09 13:09:12.222 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:12.817 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 320193 for ticker AAPL
+2026-11-09 13:09:12.817 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AAPL (CIK 320193)
+2026-11-09 13:09:12.843 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000320193.json
+2026-11-09 13:09:13.328 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:13.328 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 320193, 'accession_number': '0000320193-26-000026', 'primary_document': 'aapl-20260926.htm', 'filing_date': '2026-11-03', 'company': 'Apple Inc.'}
+2026-11-09 13:09:13.328 | INFO     | __main__:run_ingestion:62 - Downloading Apple Inc. filed 2026-11-03 (accession 0000320193-26-000026)
+2026-11-09 13:09:13.328 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-09 13:09:13.328 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm
+2026-11-09 13:09:13.819 | INFO     | __main__:run_ingestion:74 - Chunked AAPL into 36 chunks
+2026-11-09 13:09:16.322 | INFO     | __main__:run_ingestion:55 - Fetching CIK for MSFT
+2026-11-09 13:09:16.322 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: MSFT
+2026-11-09 13:09:16.322 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:16.547 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 789019 for ticker MSFT
+2026-11-09 13:09:16.562 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for MSFT (CIK 789019)
+2026-11-09 13:09:16.562 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000789019.json
+2026-11-09 13:09:16.994 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:16.994 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 789019, 'accession_number': '0001193125-26-323660', 'primary_document': 'msft-20260630.htm', 'filing_date': '2026-07-29', 'company': 'MICROSOFT CORP'}
+2026-11-09 13:09:16.994 | INFO     | __main__:run_ingestion:62 - Downloading MICROSOFT CORP filed 2026-07-29 (accession 0001193125-26-323660)
+2026-11-09 13:09:16.994 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm
+2026-11-09 13:09:16.994 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm
+2026-11-09 13:09:18.909 | INFO     | __main__:run_ingestion:74 - Chunked MSFT into 51 chunks
+2026-11-09 13:09:20.813 | INFO     | __main__:run_ingestion:55 - Fetching CIK for JPM
+2026-11-09 13:09:20.813 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: JPM
+2026-11-09 13:09:20.813 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:21.027 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 19617 for ticker JPM
+2026-11-09 13:09:21.027 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for JPM (CIK 19617)
+2026-11-09 13:09:21.027 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000019617.json
+2026-11-09 13:09:21.574 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:21.574 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 19617, 'accession_number': '0001628280-26-008131', 'primary_document': 'jpm-20251231.htm', 'filing_date': '2026-02-13', 'company': 'JPMORGAN CHASE & CO'}
+2026-11-09 13:09:21.574 | INFO     | __main__:run_ingestion:62 - Downloading JPMORGAN CHASE & CO filed 2026-02-13 (accession 0001628280-26-008131)
+2026-11-09 13:09:21.574 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm
+2026-11-09 13:09:21.574 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm
+2026-11-09 13:09:25.057 | INFO     | __main__:run_ingestion:74 - Chunked JPM into 191 chunks
+2026-11-09 13:09:31.996 | INFO     | __main__:run_ingestion:55 - Fetching CIK for GOOGL
+2026-11-09 13:09:31.996 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: GOOGL
+2026-11-09 13:09:31.996 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:32.212 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 1652044 for ticker GOOGL
+2026-11-09 13:09:32.212 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for GOOGL (CIK 1652044)
+2026-11-09 13:09:32.212 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0001652044.json
+2026-11-09 13:09:32.660 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:32.675 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 1652044, 'accession_number': '0001652044-26-000018', 'primary_document': 'goog-20251231.htm', 'filing_date': '2026-02-05', 'company': 'Alphabet Inc.'}
+2026-11-09 13:09:32.675 | INFO     | __main__:run_ingestion:62 - Downloading Alphabet Inc. filed 2026-02-05 (accession 0001652044-26-000018)
+2026-11-09 13:09:32.679 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm
+2026-11-09 13:09:32.679 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm
+2026-11-09 13:09:33.363 | INFO     | __main__:run_ingestion:74 - Chunked GOOGL into 55 chunks
+2026-11-09 13:09:35.384 | INFO     | __main__:run_ingestion:55 - Fetching CIK for AMZN
+2026-11-09 13:09:35.384 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: AMZN
+2026-11-09 13:09:35.384 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:35.707 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 1018724 for ticker AMZN
+2026-11-09 13:09:35.707 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for AMZN (CIK 1018724)
+2026-11-09 13:09:35.722 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0001018724.json
+2026-11-09 13:09:36.157 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:36.157 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 1018724, 'accession_number': '0001018724-26-000004', 'primary_document': 'amzn-20251231.htm', 'filing_date': '2026-02-06', 'company': 'AMAZON COM INC'}
+2026-11-09 13:09:36.157 | INFO     | __main__:run_ingestion:62 - Downloading AMAZON COM INC filed 2026-02-06 (accession 0001018724-26-000004)
+2026-11-09 13:09:36.157 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm
+2026-11-09 13:09:36.157 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm
+2026-11-09 13:09:37.253 | INFO     | __main__:run_ingestion:74 - Chunked AMZN into 45 chunks
+2026-11-09 13:09:38.933 | INFO     | __main__:run_ingestion:55 - Fetching CIK for META
+2026-11-09 13:09:38.933 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: META
+2026-11-09 13:09:38.933 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:39.165 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 1326801 for ticker META
+2026-11-09 13:09:39.165 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for META (CIK 1326801)
+2026-11-09 13:09:39.165 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0001326801.json
+2026-11-09 13:09:39.612 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:39.614 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 1326801, 'accession_number': '0001628280-26-003942', 'primary_document': 'meta-20251231.htm', 'filing_date': '2026-01-29', 'company': 'Meta Platforms, Inc.'}
+2026-11-09 13:09:39.614 | INFO     | __main__:run_ingestion:62 - Downloading Meta Platforms, Inc. filed 2026-01-29 (accession 0001628280-26-003942)
+2026-11-09 13:09:39.614 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm
+2026-11-09 13:09:39.614 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm
+2026-11-09 13:09:40.541 | INFO     | __main__:run_ingestion:74 - Chunked META into 82 chunks
+2026-11-09 13:09:44.017 | INFO     | __main__:run_ingestion:55 - Fetching CIK for NVDA
+2026-11-09 13:09:44.017 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: NVDA
+2026-11-09 13:09:44.017 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:44.280 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 1045810 for ticker NVDA
+2026-11-09 13:09:44.280 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for NVDA (CIK 1045810)
+2026-11-09 13:09:44.280 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0001045810.json
+2026-11-09 13:09:44.707 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:44.710 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 1045810, 'accession_number': '0001045810-26-000021', 'primary_document': 'nvda-20260125.htm', 'filing_date': '2026-02-25', 'company': 'NVIDIA CORP'}
+2026-11-09 13:09:44.710 | INFO     | __main__:run_ingestion:62 - Downloading NVIDIA CORP filed 2026-02-25 (accession 0001045810-26-000021)
+2026-11-09 13:09:44.710 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm
+2026-11-09 13:09:44.710 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm
+2026-11-09 13:09:45.753 | INFO     | __main__:run_ingestion:74 - Chunked NVDA into 53 chunks
+2026-11-09 13:09:48.417 | INFO     | __main__:run_ingestion:55 - Fetching CIK for TSLA
+2026-11-09 13:09:48.417 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: TSLA
+2026-11-09 13:09:48.417 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:48.721 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 1318605 for ticker TSLA
+2026-11-09 13:09:48.721 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for TSLA (CIK 1318605)
+2026-11-09 13:09:48.721 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0001318605.json
+2026-11-09 13:09:49.199 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:49.199 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 1318605, 'accession_number': '0001628280-26-003952', 'primary_document': 'tsla-20251231.htm', 'filing_date': '2026-01-29', 'company': 'Tesla, Inc.'}
+2026-11-09 13:09:49.199 | INFO     | __main__:run_ingestion:62 - Downloading Tesla, Inc. filed 2026-01-29 (accession 0001628280-26-003952)
+2026-11-09 13:09:49.203 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm
+2026-11-09 13:09:49.204 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm
+2026-11-09 13:09:51.814 | INFO     | __main__:run_ingestion:74 - Chunked TSLA into 62 chunks
+2026-11-09 13:09:58.882 | INFO     | __main__:run_ingestion:55 - Fetching CIK for JNJ
+2026-11-09 13:09:58.882 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: JNJ
+2026-11-09 13:09:58.882 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:09:59.267 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 200406 for ticker JNJ
+2026-11-09 13:09:59.267 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for JNJ (CIK 200406)
+2026-11-09 13:09:59.275 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000200406.json
+2026-11-09 13:09:59.711 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:09:59.711 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 200406, 'accession_number': '0000200406-26-000016', 'primary_document': 'jnj-20251228.htm', 'filing_date': '2026-02-11', 'company': 'JOHNSON & JOHNSON'}
+2026-11-09 13:09:59.711 | INFO     | __main__:run_ingestion:62 - Downloading JOHNSON & JOHNSON filed 2026-02-11 (accession 0000200406-26-000016)
+2026-11-09 13:09:59.711 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm
+2026-11-09 13:09:59.715 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm
+2026-11-09 13:10:05.230 | INFO     | __main__:run_ingestion:74 - Chunked JNJ into 70 chunks
+2026-11-09 13:10:13.690 | INFO     | __main__:run_ingestion:55 - Fetching CIK for V
+2026-11-09 13:10:13.690 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: V
+2026-11-09 13:10:13.690 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:10:13.942 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 1403161 for ticker V
+2026-11-09 13:10:13.948 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for V (CIK 1403161)
+2026-11-09 13:10:13.949 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0001403161.json
+2026-11-09 13:10:14.405 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:10:14.409 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 1403161, 'accession_number': '0001403161-26-000134', 'primary_document': 'v-20260930.htm', 'filing_date': '2026-11-05', 'company': 'VISA INC.'}
+2026-11-09 13:10:14.409 | INFO     | __main__:run_ingestion:62 - Downloading VISA INC. filed 2026-11-05 (accession 0001403161-26-000134)
+2026-11-09 13:10:14.409 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/1403161/000140316126000134/v-20260930.htm
+2026-11-09 13:10:14.409 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/1403161/000140316126000134/v-20260930.htm
+2026-11-09 13:10:17.753 | INFO     | __main__:run_ingestion:74 - Chunked V into 68 chunks
+2026-11-09 13:10:26.141 | INFO     | __main__:run_ingestion:55 - Fetching CIK for WMT
+2026-11-09 13:10:26.141 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: WMT
+2026-11-09 13:10:26.149 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:10:26.546 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 104169 for ticker WMT
+2026-11-09 13:10:26.549 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for WMT (CIK 104169)
+2026-11-09 13:10:26.549 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000104169.json
+2026-11-09 13:10:26.987 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:10:26.989 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 104169, 'accession_number': '0000104169-26-000055', 'primary_document': 'wmt-20260131.htm', 'filing_date': '2026-03-13', 'company': 'Walmart Inc.'}
+2026-11-09 13:10:26.989 | INFO     | __main__:run_ingestion:62 - Downloading Walmart Inc. filed 2026-03-13 (accession 0000104169-26-000055)
+2026-11-09 13:10:26.991 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm
+2026-11-09 13:10:26.992 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm
+2026-11-09 13:10:30.577 | INFO     | __main__:run_ingestion:74 - Chunked WMT into 56 chunks
+2026-11-09 13:10:36.680 | INFO     | __main__:run_ingestion:55 - Fetching CIK for CVX
+2026-11-09 13:10:36.685 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: CVX
+2026-11-09 13:10:36.685 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:10:36.979 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 93410 for ticker CVX
+2026-11-09 13:10:36.979 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for CVX (CIK 93410)
+2026-11-09 13:10:36.984 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000093410.json
+2026-11-09 13:10:37.435 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:10:37.438 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 93410, 'accession_number': '0000093410-26-000078', 'primary_document': 'cvx-20251231.htm', 'filing_date': '2026-02-24', 'company': 'CHEVRON CORP'}
+2026-11-09 13:10:37.439 | INFO     | __main__:run_ingestion:62 - Downloading CHEVRON CORP filed 2026-02-24 (accession 0000093410-26-000078)
+2026-11-09 13:10:37.439 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm
+2026-11-09 13:10:37.441 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm
+2026-11-09 13:10:44.909 | INFO     | __main__:run_ingestion:74 - Chunked CVX into 80 chunks
+2026-11-09 13:10:53.313 | INFO     | __main__:run_ingestion:55 - Fetching CIK for PG
+2026-11-09 13:10:53.313 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: PG
+2026-11-09 13:10:53.313 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:10:53.668 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 80424 for ticker PG
+2026-11-09 13:10:53.670 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for PG (CIK 80424)
+2026-11-09 13:10:53.670 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000080424.json
+2026-11-09 13:10:54.101 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:10:54.103 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 80424, 'accession_number': '0000080424-26-000103', 'primary_document': 'pg-20260630.htm', 'filing_date': '2026-08-04', 'company': 'PROCTER & GAMBLE Co'}
+2026-11-09 13:10:54.103 | INFO     | __main__:run_ingestion:62 - Downloading PROCTER & GAMBLE Co filed 2026-08-04 (accession 0000080424-26-000103)
+2026-11-09 13:10:54.103 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm
+2026-11-09 13:10:54.109 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm
+2026-11-09 13:10:57.845 | INFO     | __main__:run_ingestion:74 - Chunked PG into 49 chunks
+2026-11-09 13:11:03.597 | INFO     | __main__:run_ingestion:55 - Fetching CIK for HD
+2026-11-09 13:11:03.597 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: HD
+2026-11-09 13:11:03.597 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:11:04.021 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 354950 for ticker HD
+2026-11-09 13:11:04.023 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for HD (CIK 354950)
+2026-11-09 13:11:04.023 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000354950.json
+2026-11-09 13:11:04.462 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:11:04.462 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 354950, 'accession_number': '0001628280-26-019436', 'primary_document': 'hd-20260201.htm', 'filing_date': '2026-03-18', 'company': 'HOME DEPOT, INC.'}
+2026-11-09 13:11:04.462 | INFO     | __main__:run_ingestion:62 - Downloading HOME DEPOT, INC. filed 2026-03-18 (accession 0001628280-26-019436)
+2026-11-09 13:11:04.462 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm
+2026-11-09 13:11:04.462 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm
+2026-11-09 13:11:07.680 | INFO     | __main__:run_ingestion:74 - Chunked HD into 52 chunks
+2026-11-09 13:11:13.659 | INFO     | __main__:run_ingestion:55 - Fetching CIK for BAC
+2026-11-09 13:11:13.661 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: BAC
+2026-11-09 13:11:13.661 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:11:13.969 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 70858 for ticker BAC
+2026-11-09 13:11:13.974 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for BAC (CIK 70858)
+2026-11-09 13:11:13.974 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000070858.json
+2026-11-09 13:11:14.476 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:11:14.486 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 70858, 'accession_number': '0000070858-26-000157', 'primary_document': 'bac-20251231.htm', 'filing_date': '2026-02-25', 'company': 'BANK OF AMERICA CORP /DE/'}
+2026-11-09 13:11:14.494 | INFO     | __main__:run_ingestion:62 - Downloading BANK OF AMERICA CORP /DE/ filed 2026-02-25 (accession 0000070858-26-000157)
+2026-11-09 13:11:14.505 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm
+2026-11-09 13:11:14.511 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm
+2026-11-09 13:11:33.058 | INFO     | __main__:run_ingestion:74 - Chunked BAC into 148 chunks
+2026-11-09 13:11:49.367 | INFO     | __main__:run_ingestion:55 - Fetching CIK for KO
+2026-11-09 13:11:49.367 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: KO
+2026-11-09 13:11:49.369 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:11:49.934 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 21344 for ticker KO
+2026-11-09 13:11:49.934 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for KO (CIK 21344)
+2026-11-09 13:11:49.940 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000021344.json
+2026-11-09 13:11:50.418 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:11:50.420 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 21344, 'accession_number': '0001628280-26-010047', 'primary_document': 'ko-20251231.htm', 'filing_date': '2026-02-20', 'company': 'COCA COLA CO'}
+2026-11-09 13:11:50.421 | INFO     | __main__:run_ingestion:62 - Downloading COCA COLA CO filed 2026-02-20 (accession 0001628280-26-010047)
+2026-11-09 13:11:50.422 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm
+2026-11-09 13:11:50.423 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm
+2026-11-09 13:11:54.740 | INFO     | __main__:run_ingestion:74 - Chunked KO into 96 chunks
+2026-11-09 13:12:03.389 | INFO     | __main__:run_ingestion:55 - Fetching CIK for PEP
+2026-11-09 13:12:03.394 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: PEP
+2026-11-09 13:12:03.394 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:12:03.678 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 77476 for ticker PEP
+2026-11-09 13:12:03.678 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for PEP (CIK 77476)
+2026-11-09 13:12:03.678 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000077476.json
+2026-11-09 13:12:04.104 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:12:04.104 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 77476, 'accession_number': '0000077476-26-000007', 'primary_document': 'pep-20251227.htm', 'filing_date': '2026-02-03', 'company': 'PEPSICO INC'}
+2026-11-09 13:12:04.104 | INFO     | __main__:run_ingestion:62 - Downloading PEPSICO INC filed 2026-02-03 (accession 0000077476-26-000007)
+2026-11-09 13:12:04.104 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/77476/000007747626000007/pep-20251227.htm
+2026-11-09 13:12:04.104 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/77476/000007747626000007/pep-20251227.htm
+2026-11-09 13:12:05.818 | INFO     | __main__:run_ingestion:74 - Chunked PEP into 68 chunks
+2026-11-09 13:12:08.350 | INFO     | __main__:run_ingestion:55 - Fetching CIK for CSCO
+2026-11-09 13:12:08.350 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: CSCO
+2026-11-09 13:12:08.350 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:12:08.611 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 858877 for ticker CSCO
+2026-11-09 13:12:08.611 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for CSCO (CIK 858877)
+2026-11-09 13:12:08.611 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000858877.json
+2026-11-09 13:12:09.090 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:12:09.090 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 858877, 'accession_number': '0000858877-26-000132', 'primary_document': 'csco-20260725.htm', 'filing_date': '2026-09-02', 'company': 'CISCO SYSTEMS, INC.'}
+2026-11-09 13:12:09.090 | INFO     | __main__:run_ingestion:62 - Downloading CISCO SYSTEMS, INC. filed 2026-09-02 (accession 0000858877-26-000132)
+2026-11-09 13:12:09.090 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm
+2026-11-09 13:12:09.090 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm
+2026-11-09 13:12:10.247 | INFO     | __main__:run_ingestion:74 - Chunked CSCO into 63 chunks
+2026-11-09 13:12:12.449 | INFO     | __main__:run_ingestion:55 - Fetching CIK for INTC
+2026-11-09 13:12:12.449 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: INTC
+2026-11-09 13:12:12.449 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:12:12.784 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 50863 for ticker INTC
+2026-11-09 13:12:12.787 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for INTC (CIK 50863)
+2026-11-09 13:12:12.789 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0000050863.json
+2026-11-09 13:12:13.235 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:12:13.238 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 50863, 'accession_number': '0000050863-26-000011', 'primary_document': 'intc-20251227.htm', 'filing_date': '2026-01-23', 'company': 'INTEL CORP'}
+2026-11-09 13:12:13.238 | INFO     | __main__:run_ingestion:62 - Downloading INTEL CORP filed 2026-01-23 (accession 0000050863-26-000011)
+2026-11-09 13:12:13.238 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm
+2026-11-09 13:12:13.238 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm
+2026-11-09 13:12:14.569 | INFO     | __main__:run_ingestion:74 - Chunked INTC into 82 chunks
+2026-11-09 13:12:21.611 | INFO     | __main__:run_ingestion:55 - Fetching CIK for DIS
+2026-11-09 13:12:21.611 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:31 - Fetching CIK for ticker: DIS
+2026-11-09 13:12:21.611 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/files/company_tickers.json
+2026-11-09 13:12:21.847 | DEBUG    | policypilot.ingestion.edgar_client:get_cik_for_ticker:36 - Found CIK 1744489 for ticker DIS
+2026-11-09 13:12:21.855 | INFO     | __main__:run_ingestion:58 - Looking up most recent 10-K for DIS (CIK 1744489)
+2026-11-09 13:12:21.855 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://data.sec.gov/submissions/CIK0001744489.json
+2026-11-09 13:12:22.286 | DEBUG    | policypilot.ingestion.edgar_client:get_recent_10k:46 - found recent 10-K for CIK {}: accession {}, primary document {}, filing date {}
+2026-11-09 13:12:22.286 | INFO     | __main__:run_ingestion:60 - dict(filing) = {'cik': 1744489, 'accession_number': '0001744489-25-000155', 'primary_document': 'dis-20250927.htm', 'filing_date': '2025-11-13', 'company': 'Walt Disney Co'}
+2026-11-09 13:12:22.286 | INFO     | __main__:run_ingestion:62 - Downloading Walt Disney Co filed 2025-11-13 (accession 0001744489-25-000155)
+2026-11-09 13:12:22.286 | DEBUG    | policypilot.ingestion.edgar_client:download_filing_text:65 - Constructed URL for filing: https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm
+2026-11-09 13:12:22.286 | DEBUG    | policypilot.ingestion.edgar_client:_get:24 - Making GET request to URL: https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm
+2026-11-09 13:12:28.522 | INFO     | __main__:run_ingestion:74 - Chunked DIS into 72 chunks
+2026-11-09 13:12:36.690 | INFO     | __main__:run_ingestion:94 - Ingestion complete: 1479 chunks indexed across 20 tickers

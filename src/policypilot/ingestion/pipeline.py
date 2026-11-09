@@ -57,6 +57,7 @@ def run_ingestion(tickers: list[str] | None = None) -> int:
 
         logger.info("Looking up most recent 10-K for {} (CIK {})", ticker, cik)
         filing = client.get_recent_10k(cik)
+        logger.info("dict(filing) = {}", filing)
 
         logger.info("Downloading " \
              "{} filed {} "
